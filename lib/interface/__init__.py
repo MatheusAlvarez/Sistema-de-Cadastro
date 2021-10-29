@@ -12,8 +12,7 @@ def leiaInt(msg):
         
         else:
             return n
-        
-
+       
 
 def linha(tam = 42):
     return '-' * tam
