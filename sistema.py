@@ -2,6 +2,7 @@ from lib.interface import *
 from lib.arquivo import *
 from time import sleep
 
+# Variável para armazenar o arquivo txt
 arq = 'cadastros.txt'
 
 if not arquivoExiste(arq):
