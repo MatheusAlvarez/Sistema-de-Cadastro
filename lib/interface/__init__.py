@@ -31,9 +31,12 @@ def cabecalho(txt):
 def menu(lista):
     cabecalho('MENU PRINCIPAL')
     c = 1
+    
     for i in lista:
         print(f'{c} - {i}')
         c += 1
+        
     print(linha())
+    
     opc = leiaInt('Sua Opção: ')
     return opc
