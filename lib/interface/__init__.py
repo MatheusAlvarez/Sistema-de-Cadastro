@@ -1,3 +1,4 @@
+#Função utilizada para certificar que o usuário digitou uma opção válida
 def leiaInt(msg):
     while True:
         try:
@@ -14,16 +15,19 @@ def leiaInt(msg):
             return n
        
 
+#Função utilizada para Linha
 def linha(tam = 42):
     return '-' * tam
 
 
+# Função utilizada para o cabeçalho
 def cabecalho(txt):
     print(linha())
     print(txt.center(42))
     print(linha())
 
 
+# Função utilizada para o Menu    
 def menu(lista):
     cabecalho('MENU PRINCIPAL')
     c = 1
