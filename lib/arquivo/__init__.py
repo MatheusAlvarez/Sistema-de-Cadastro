@@ -1,5 +1,7 @@
 from lib.interface import  *
 
+
+#Função utilizada para verificar o arquivo 
 def arquivoExiste(nome):
     try:
         a = open(nome, 'rt')
@@ -10,6 +12,7 @@ def arquivoExiste(nome):
         return True
 
 
+# Função utilizada para criar o arquivo   
 def criarArquivo(nome):
     try:
         a = open(nome, 'wt+')
@@ -19,7 +22,8 @@ def criarArquivo(nome):
     else:
         print(f'Arquivo {nome} criado com sucesso!')
     
-
+  
+# Função utilizada para ler o arquivo
 def lerArquivo(nome):
     try:
         a = open(nome, 'rt')
@@ -35,6 +39,7 @@ def lerArquivo(nome):
         a.close
 
 
+# Função utilizada para fazer o cadastro    
 def cadastrar(arq, nome = 'desconhecido', idade = 0):
     try:
         a = open(arq, 'at')
